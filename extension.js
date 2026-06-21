@@ -30,9 +30,7 @@ function activate(context) {
 
 		try {
 			const { stdout } = await execFileAsync('nix-search', ['--json', query]);
-			// 1. Split safely handling different line breaks
 			const lines = stdout.trim().split(/\r?\n/).filter(Boolean);
-			//console.log(`Total raw lines found: ${lines.length}`);
 			const searchResults = lines.map(lines => JSON.parse(lines));
 
 			return searchResults.map(pkg => {
