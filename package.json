@@ -1,0 +1,25 @@
+{
+  "name": "nixos-package-search",
+  "displayName": "nixos-package-search",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "activationEvents": [
+    "onLanguage:nix"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "nix",
+      "aliases": ["Nix", "nix"],
+      "extensions": [".nix"]
+    }]
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0"
+  }
+}
