@@ -1,6 +1,7 @@
 {
   "name": "nixos-package-search",
   "displayName": "nixos-package-search",
+  "repository": {"url": "https://github.com/TomasBaubllys/nixos-package-search"},
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"
