@@ -16,16 +16,19 @@ No settings are currently available
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues
 
 ## Release Notes
 
 If you find any bugs feel free to make a pull request on github
-
-### 1.0.0
-
-Initial release
-
 ---
+
+## Installation
+You will require vsce for the installation
+Simply run:
+```
+vsce package
+code --install-extension [name of generated .vsix file]
+```
 
 **Enjoy!**
