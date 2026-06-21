@@ -1,4 +1,4 @@
-# nixos-package-search README
+# nixos-package-search
 
 An extension for .nix files, to avoid annoying package lookup
 

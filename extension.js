@@ -22,6 +22,12 @@ function activate(context) {
 			return [];
 		}
 
+		if(query.startsWith('pkgs.')) {
+			query.replace('pkgs.', '');
+		}
+
+		console.log(query);
+
 		try {
 			const { stdout } = await execFileAsync('nix-search', ['--json', query]);
 			// 1. Split safely handling different line breaks
