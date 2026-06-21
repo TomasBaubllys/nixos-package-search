@@ -28,7 +28,7 @@ You will require vsce for the installation
 Simply run:
 ```
 vsce package
-code --install-extension [name of generated .vsix file]
+code --install-extension <name of generated .vsix file>
 ```
 
 **Enjoy!**
